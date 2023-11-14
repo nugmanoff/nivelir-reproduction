@@ -2,8 +2,12 @@ import UIKit
 import Nivelir
 
 struct AppScreens {
-    func rootScreen(_ titleText: String, _ color: UIColor, navigator: ScreenNavigator) -> AnyModalScreen {
-        RootViewController(titleText: titleText, color: color, navigator: navigator).eraseToAnyModalScreen()
+    func scenario1(navigator: ScreenNavigator) -> AnyModalScreen {
+        Scenario1(navigator: navigator).eraseToAnyModalScreen()
+    }
+    
+    func scenario2(navigator: ScreenNavigator) -> AnyModalScreen {
+        Scenario2(navigator: navigator).eraseToAnyModalScreen()
     }
     
     func parentScreen(id: String, navigator: ScreenNavigator) -> AnyModalScreen {

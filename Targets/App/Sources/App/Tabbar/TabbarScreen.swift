@@ -12,15 +12,15 @@ struct TabbarScreen: Screen {
             route
                 .setupTab(
                     with: screens
-                        .rootScreen("First Tab", .white, navigator: navigator)
+                        .scenario1(navigator: navigator)
                         .withStackContainer()
-                        .withTabBarItem(.firstTab)
+                        .withTabBarItem(.scenario1)
                 )
                 .setupTab(
                     with: screens
-                        .rootScreen("Second Tab", .white, navigator: navigator)
+                        .scenario2(navigator: navigator)
                         .withStackContainer()
-                        .withTabBarItem(.secondTab)
+                        .withTabBarItem(.scenario2)
                 )
                 .selectTab(with: .index(0))
         }
@@ -30,14 +30,14 @@ struct TabbarScreen: Screen {
 }
 
 extension UITabBarItem {
-    static let firstTab = UITabBarItem(
-        title: "First Tab",
+    static let scenario1 = UITabBarItem(
+        title: "Scenario 1",
         image: .init(systemName: ""),
         selectedImage: .init(systemName: "")
     )
 
-    static let secondTab = UITabBarItem(
-        title: "Second Tab",
+    static let scenario2 = UITabBarItem(
+        title: "Scenario 2",
         image: .init(systemName: ""),
         selectedImage: .init(systemName: "")
     )
