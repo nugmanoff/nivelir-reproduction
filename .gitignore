@@ -1,0 +1,9 @@
+**/*.env
+**/*.DS_Store
+Derived/
+Tuist/Dependencies/
+*.xcworkspace
+*.xcodeproj
+Fastlane/report.xml
+*.app.dSYM.*
+*.ipa
