@@ -1,0 +1,21 @@
+PODS:
+  - Nivelir (1.6.3)
+
+DEPENDENCIES:
+  - Nivelir (from `https://github.com/hhru/Nivelir.git`)
+
+EXTERNAL SOURCES:
+  Nivelir:
+    :git: https://github.com/hhru/Nivelir.git
+
+CHECKOUT OPTIONS:
+  Nivelir:
+    :commit: cbe2a60450c7c3391f5112d2f90362c9f48f486a
+    :git: https://github.com/hhru/Nivelir.git
+
+SPEC CHECKSUMS:
+  Nivelir: b3f92ed5131ab661e609f3dfb41b41aeb66f2697
+
+PODFILE CHECKSUM: a0b117779b0d355128f7d64ae9374a5013d83a03
+
+COCOAPODS: 1.12.1

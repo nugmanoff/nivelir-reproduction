@@ -38,6 +38,7 @@ final class ChildViewController: UIViewController {
     @objc private func onButtonDidTap() {
         let screen = AppScreens().parentScreen(id: "123", navigator: navigator)
         
+        #warning("Тут не находит нужный экран")
         navigator.navigate(from: stack) { route in
             route
                 .last(.container(key: screen.key))
